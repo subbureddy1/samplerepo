@@ -1,0 +1,21 @@
+       vim br
+  460  git status
+  461  git status
+  462  clear
+  463  git diff
+  464  vim br
+  465  git commit -m "this is my addition version"
+  466  git config --global user.email "subbareddy.badireddy@gmail.com"
+  467  git config --global user.name "subbureddy1"
+  468  git config --list
+  469  git commit -m "this is my addition version"
+  470  ls -la
+  471  git status
+  472  git add .
+  473  git statu
+  474  git status
+  475  git commit -m "this is my first to send"
+  476  git status
+  477  git remote add origin https://github.com/subbureddy1/First_repo.git
+  478  git push
+  479  git push --set-upstream origin master

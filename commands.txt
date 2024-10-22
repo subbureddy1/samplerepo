@@ -19,3 +19,184 @@
   477  git remote add origin https://github.com/subbureddy1/First_repo.git
   478  git push
   479  git push --set-upstream origin master
+
+
+
+1. Basic Commands
+
+git init: Initialize a new Git repository.
+
+git clone <repository>: Clone a repository from a remote server.
+
+git status: Check the status of files in the working directory.
+
+git add <file>: Stage files for commit.
+
+git commit -m "message": Commit changes with a message.
+
+git push origin <branch>: Push changes to a remote branch.
+
+git pull: Fetch and merge changes from the remote repository.
+
+2. Branch Management
+
+git branch: List branches.
+
+git branch <new-branch>: Create a new branch.
+
+git checkout <branch>: Switch to a different branch.
+
+git checkout -b <new-branch>: Create and switch to a new branch.
+
+git merge <branch>: Merge a branch into the current branch.
+
+git branch -d <branch>: Delete a local branch.
+
+git push origin --delete <branch>: Delete a remote branch.
+
+3. Stashing and Reverting
+
+git stash: Temporarily save changes that are not ready to commit.
+
+git stash apply: Apply the stashed changes back.
+
+git reset <file>: Unstage a file.
+
+git reset --hard <commit>: Reset the working directory and staging area to a specific commit.
+
+git revert <commit>: Create a new commit that reverses changes from a specific commit.
+
+4. Viewing Logs and History
+
+git log: View commit history.
+
+git log --oneline: View a compact commit history.
+
+git diff: Show changes between commits, branches, or the working directory.
+
+git show <commit>: Show detailed information about a specific commit.
+
+5. Working with Remotes
+
+git remote -v: Show remote repositories.
+
+git remote add <name> <url>: Add a new remote repository.
+
+git fetch <remote>: Fetch changes from a remote without merging.
+
+git push -u origin <branch>: Push a branch to a remote and set it to track the remote branch.
+
+6. Tagging
+
+git tag <tagname>: Create a new tag.
+
+git tag -a <tagname> -m "message": Create an annotated tag with a message.
+
+git push origin <tagname>: Push a tag to the remote repository.
+
+git push --tags: Push all tags to the remote repository.
+
+7. Advanced Commands
+
+git rebase <branch>: Rebase the current branch onto another branch.
+
+git cherry-pick <commit>: Apply the changes from a specific commit onto the current branch.
+
+git bisect: Use binary search to find the commit that introduced a bug.
+
+git config --global <key> <value>: Set global Git configurations.
+
+These commands are essential for managing code in a version-controlled environment, especially for collaboration, automation, and integration tasks.
+
+8. Handling Conflicts
+
+git merge --abort: Abort a merge in progress and revert to the state before the merge.
+
+git rebase --abort: Abort a rebase in progress.
+
+git reset --merge: Reset a merge or rebase when conflicts occur.
+
+git mergetool: Use a merge tool to resolve conflicts.
+
+9. Working with Submodules
+
+git submodule add <repository>: Add a submodule to the current repository.
+
+git submodule init: Initialize submodules after cloning the repository.
+
+git submodule update: Fetch and update submodules to the latest commit.
+
+git submodule foreach 'command': Execute a command for each submodule.
+
+10. Interactive Rebase
+
+git rebase -i <commit>: Start an interactive rebase from a specific commit.
+
+pick: Keep a commit as it is.
+
+squash (s): Merge a commit into the previous one.
+
+edit: Modify a commit.
+
+drop: Remove a commit.
+
+11. Amending Commits
+
+git commit --amend -m "new message": Modify the last commit message or add more changes.
+
+git commit --amend --no-edit: Amend the last commit without changing the message.
+
+12. Cleaning Up Working Directory
+
+git clean -f: Remove untracked files.
+
+git clean -fd: Remove untracked files and directories.
+
+git clean -n: Show what would be removed without actually removing it.
+
+13. Viewing Changes
+
+git diff --staged: View changes that are staged but not yet committed.
+
+git diff HEAD: View changes between the working directory and the last commit.
+
+git log --graph --all --decorate: View the commit history as a graph.
+
+14. Undoing Commits
+
+git reset --soft <commit>: Move the HEAD to a previous commit but keep the changes staged.
+
+git reset --mixed <commit>: Move the HEAD to a previous commit and unstage changes.
+
+git reset --hard <commit>: Move the HEAD to a previous commit and discard all changes.
+
+git reflog: View the history of all changes to HEAD, including those from reset and rebase.
+
+15. Working with Patches
+
+git diff > patchfile.patch: Create a patch file with the differences.
+
+git apply patchfile.patch: Apply a patch to the working directory.
+
+git format-patch <commit>: Create a patch file from a commit.
+
+git am < patchfile.patch: Apply a patch as a commit.
+
+16. Aliases for Shortcuts
+
+git config --global alias.st status: Create a shortcut for git status.
+
+git config --global alias.co checkout: Create a shortcut for git checkout.
+
+git config --global alias.br branch: Create a shortcut for git branch.
+
+git config --global alias.cm commit: Create a shortcut for git commit.
+
+17. Working with Hooks
+
+hooks/pre-commit: Script to run before committing. Can be used for linting, tests, etc.
+
+hooks/post-commit: Script to run after a commit. Useful for notifications or automated tasks.
+
+hooks/pre-push: Script to run before pushing. Helps in verifying code quality or other checks before changes are pushed to the server.
+

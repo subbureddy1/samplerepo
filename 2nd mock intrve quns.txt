@@ -1,0 +1,31 @@
+1. What is EC2 and elaborate that and what are the prerequisites ?
+
+2. what is AMI and pem file
+
+3. if you lost key pair how you connect the ec2 instance with out dataloss?
+
+4. Assume i want to lanch an ec2 instance with prerequisites but i install some packages while lanching ec2 how you are going to do that one?
+
+5. what is the diff b/w user and role?
+
+6. i want to connect ec2 instance but its not connecting how you troubleshoot one?
+
+7. let Assume i have 3 subnets one is public and other 2 private subnet how you connect private subnet with the help of public subnet?
+
+8. how can you secure your instance?
+
+9. what is diff b/w security group and NACL?
+
+10. how can you customise ami?
+
+11. i want to detach volume and attach specific instance how can you do that one ?
+
+12. what is s3 and what is the purpouse?
+
+13. how you provide the lifecycle to s3 bucket?
+
+14. what is cross region replication?
+
+15. what are the storage classes in s3?
+
+
